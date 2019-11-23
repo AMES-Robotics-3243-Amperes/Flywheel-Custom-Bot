@@ -1,3 +1,4 @@
+ // Joysticks
 package frc.robot;
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -11,7 +12,6 @@ Double [] drivingJoysticks() {
 	Double [] axisVar = new Double[2];
 	axisVar[0] = firstInput.getRawAxis(1);
 	axisVar[1] = firstInput.getRawAxis(3);
-	axisVar = scaleFactor(axisVar);
 	axisVar = deadZone(axisVar);    
 	return axisVar;
 }
